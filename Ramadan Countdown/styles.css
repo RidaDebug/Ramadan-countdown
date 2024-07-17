@@ -1,0 +1,113 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2024/03/12/15/33/mosque-8629024_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.countdown-container {
+    background: linear-gradient(120deg, #4567b7 0%, #ffe0b3, #f9f9f9);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    /* background-color: #ffffff69; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-timer span {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+
+#months {
+    color: #03A9F4;
+    animation-delay: 0.5s;
+}
+
+#days {
+    color: #b89b28;
+    animation-delay: 1s;
+}
+
+#hours {
+    color: #4CAF50;
+    animation-delay: 1.5s;
+}
+
+#minutes {
+    color: #FF9800;
+    animation-delay: 2s;
+}
+
+#seconds {
+    color: #FF69B4;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .countdown-container {
+        max-width: 100%;
+    }
+
+    .countdown-timer span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .countdown-container {
+        padding: 10px;
+    }
+
+    .countdown-timer span {
+        font-size: 18px;
+    }
+}
